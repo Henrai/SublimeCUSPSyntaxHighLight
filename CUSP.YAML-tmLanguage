@@ -1,0 +1,35 @@
+# [PackageDev] target_format: plist, ext: tmLanguage
+---
+name: CUSP
+scopeName: source.csp
+fileTypes: [csp]
+uuid: 31d41479-6e3f-49b8-b057-ee792a9a0843
+
+patterns:
+- match: (\\s)*;.*$  
+  name: comment.line.csp
+  comment: comment begin with ';'
+
+- match: \b[0-9]+\b
+  name: constant.character.decimal.csp
+  comment: decimal constant number
+
+- match: (\$)(?i)[A-Z0-9]+
+  name: constant.character.hexadecimal.csp
+  comment: hexadecimal constant number
+
+- match: \b(?i)(cma|acc|cma|cmx|cmx|cms|cms|cmf|tst|and|or|xor|com|coma|shra|shla|rtra|rroa|rloa|jmp|jmp|jsr|jsr|int|rtn|irtn|jeq|jne|jlt|jge|jle|jgt|jov|jno|ldc|stc|aoc| soj|bgn|fin|inb|outb|inw|outw|sie|cie|nop|hlt|lda|ldx|lds|ldf|sta|stx|sts|stf|psh|pop|clr|set|tax|tas|taf|txa|txs|txf|tsa|tsx|tsf|tfa|tfx|tfs|psha|pshx|pshf|popa|popx|popf|ada|adx|ads|adf|sba|sbx|sbs|sbf|mul|div|mod|inc|dec|neg|nega)(#?) 
+  name: keyword.control.csp
+  comment: keyword of CUSP
+
+- match: (?i)[A-Z0-9]+(\:)
+  name: keyword.other.csp
+  comment: labels
+
+- match: \.(?i)[a-z0-9]+\b
+  name: entity.name.function.csp
+  comment: data type
+
+- match: (').*?(')
+  name: string.csp
+  comment:  string 

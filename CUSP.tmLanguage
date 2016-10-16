@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>fileTypes</key>
+	<array>
+		<string>csp</string>
+	</array>
+	<key>name</key>
+	<string>CUSP</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>comment</key>
+			<string>comment begin with ';'</string>
+			<key>match</key>
+			<string>(\\s)*;.*$</string>
+			<key>name</key>
+			<string>comment.line.csp</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>decimal constant number</string>
+			<key>match</key>
+			<string>\b[0-9]+\b</string>
+			<key>name</key>
+			<string>constant.character.decimal.csp</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>hexadecimal constant number</string>
+			<key>match</key>
+			<string>(\$)(?i)[A-Z0-9]+</string>
+			<key>name</key>
+			<string>constant.character.hexadecimal.csp</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>keyword of CUSP</string>
+			<key>match</key>
+			<string>\b(?i)(cma|acc|cma|cmx|cmx|cms|cms|cmf|tst|and|or|xor|com|coma|shra|shla|rtra|rroa|rloa|jmp|jmp|jsr|jsr|int|rtn|irtn|jeq|jne|jlt|jge|jle|jgt|jov|jno|ldc|stc|aoc| soj|bgn|fin|inb|outb|inw|outw|sie|cie|nop|hlt|lda|ldx|lds|ldf|sta|stx|sts|stf|psh|pop|clr|set|tax|tas|taf|txa|txs|txf|tsa|tsx|tsf|tfa|tfx|tfs|psha|pshx|pshf|popa|popx|popf|ada|adx|ads|adf|sba|sbx|sbs|sbf|mul|div|mod|inc|dec|neg|nega)(#?)</string>
+			<key>name</key>
+			<string>keyword.control.csp</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>labels</string>
+			<key>match</key>
+			<string>(?i)[A-Z0-9]+(\:)</string>
+			<key>name</key>
+			<string>keyword.other.csp</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>data type</string>
+			<key>match</key>
+			<string>\.(?i)[a-z0-9]+\b</string>
+			<key>name</key>
+			<string>entity.name.function.csp</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>string</string>
+			<key>match</key>
+			<string>(').*?(')</string>
+			<key>name</key>
+			<string>string.csp</string>
+		</dict>
+	</array>
+	<key>scopeName</key>
+	<string>source.csp</string>
+	<key>uuid</key>
+	<string>31d41479-6e3f-49b8-b057-ee792a9a0843</string>
+</dict>
+</plist>
