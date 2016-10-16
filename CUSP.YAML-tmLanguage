@@ -23,7 +23,7 @@ patterns:
   comment: keyword of CUSP
 
 - match: (?i)[A-Z0-9]+(\:)
-  name: keyword.other.csp
+  name: support.function.csp
   comment: labels
 
 - match: \.(?i)[a-z0-9]+\b

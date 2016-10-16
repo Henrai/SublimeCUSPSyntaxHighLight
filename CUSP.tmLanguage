@@ -48,7 +48,7 @@
 			<key>match</key>
 			<string>(?i)[A-Z0-9]+(\:)</string>
 			<key>name</key>
-			<string>keyword.other.csp</string>
+			<string>support.function.csp</string>
 		</dict>
 		<dict>
 			<key>comment</key>
