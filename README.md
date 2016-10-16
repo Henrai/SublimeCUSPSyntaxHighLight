@@ -1,2 +1,2 @@
 # SublimeCUSPSyntaxHighLight
-CUSP Syntax Highlight for Sublime
+CUSP Syntax Highlighting for Sublime
